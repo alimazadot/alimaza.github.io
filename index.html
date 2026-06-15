@@ -1,8 +1,11 @@
 <html>
 <head>
-  <link href="https://db.onlinewebfonts.com/c/9632ac9bebba69032fcb3b00cb5b06c2?family=Smiley+Sans+Oblique" rel="stylesheet" type="text/css"/>
 <style>
-html {
+@font-face {
+  font-family: myFont;
+  src: url(smileysansoblique.woff);
+}
+  html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --golden: rgba(254, 181, 0, 255);
   --blue: rgba(0, 121, 155, 255);
@@ -32,7 +35,7 @@ h2 {
 h3 {
   color: var(--golden);
   font-size: 25px;
-  font-family: "Smiley Sans Oblique";
+  font-family: myfont;
 }
 
 img {
