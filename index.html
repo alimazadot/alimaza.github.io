@@ -1,0 +1,230 @@
+<html>
+<head>
+<style>
+html {
+  font-family: sans-serif;
+  --golden: rgba(254, 181, 0, 255);
+  --blue: rgba(0, 121, 155, 255);
+}
+
+body {
+  margin: 3rem 20%;
+  background-color: #EEEEEE;
+  background-image: url('./backgroundTexture.png');
+}
+
+h1 {
+  text-transform: lowercase; 
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--golden);
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+
+}
+
+h3 {
+  color: var(--golden);
+}
+
+img {
+  display: block;
+  inline-size: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section > * {
+  margin: 1rem;
+  flex-basis: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact {
+  text-align: right;
+  margin: 2rem 0;
+}
+
+.new-work {
+  text-align: center;
+}
+
+.more-things {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 2rem;
+
+  img {
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+}
+
+.thing-showcase { 
+  margin: 2rem;
+}
+
+.thing-showcase > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  * {
+    margin: 0.5em 0;
+  }
+
+  a {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.footer > * {
+  outline: 2px solid var(--blue);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2);
+  background-color: white;
+}
+
+
+a.big-link {
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--blue); 
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  min-width: 40%;
+  max-width: 50%;
+  border-radius: 5px;
+  transition:
+    color 0.3s ease-in,
+    background-color 0.3s ease-in;
+  align-self: center;
+  }
+  
+  .big-link:hover {
+    color: var(--blue);
+    background: white;
+    outline: 1px solid var(--blue);
+  }
+  
+  .rounded {
+    border-radius: 10px;
+  }
+
+@media (max-width: 1000px) {
+  html {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+  <body>
+    <div class="contact">
+      <b>
+        <i>
+          CONTACT
+        </i>
+      </b>
+    </div>
+    <section class="bio">
+      <div>
+        <img src="alibio.png" alt="placeholder image"/>
+      </div>
+      <div>
+        <h3><i>
+          hello, my name is Ali!
+        </i></h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <h3><i>
+          fun facts about me:
+        </i></h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </section>
+
+    <section class="new-work">
+      <div>
+        <h4><i>
+          my new zine
+        </i></h4>
+        <h2>SECOND CHANCE IMMIGRANT</h1>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <a class="big-link">BUY PHYSICAL COPY</a>
+        <a class="big-link">DIGITAL DOWNLOAD</a>
+      </div>
+      <div>
+        <img src="./versaillehallway.jpg" alt="placeholder image"/>
+      </div>
+    </section>
+
+    <h1><i>more things i've made</i></h1>
+    <section class="more-things">
+      <div class="thing-showcase">
+        <img src="duckandkitten.png" alt="placeholder image"/>
+        <div>
+          <h2>DUCK AND KITTEN</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <a class="rounded big-link">READ HERE</a>
+        </div>
+      </div>
+      <div class="thing-showcase">
+        <img src="./versaillehallway.jpg" alt="placeholder image"/>
+        <div>
+          <h2>WEBCOMIC ARCHIVE</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <a class="rounded big-link">READ HERE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div>
+        <h3><i>
+          wanna keep up with me?
+        </i></h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div>
+        <h3><i>
+            wanna get in touch?
+        </i></h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </section>
+</body>
+</html>
+  </body>
+</html>
