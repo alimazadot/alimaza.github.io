@@ -199,12 +199,54 @@ a.big-link {
 @media (min-width: 481px) and (max-width: 767px) {
     section {
     flex-direction: column;
+    justify-content: centre;
+    margin: 0;
+  }
+  .contact {
+  text-align: centre;
+  font-family: myFont;
+  font-size: 15px;
+}
+.thing-showcase { 
+  margin: 0;
+}
+
+.thing-showcase > div {
+  display: initial;
+  flex-direction: column;
+  align-items: centre;
+
+  * {
+    margin: 0;
   }
 }
+
+}
 @media (max-width: 480px) {
-  section {
+    section {
     flex-direction: column;
+    justify-content: centre;
+    margin: 0;
   }
+  .contact {
+  text-align: centre;
+  font-family: myFont;
+  font-size: 15px;
+}
+.thing-showcase { 
+  margin: 0;
+}
+
+.thing-showcase > div {
+  display: initial;
+  flex-direction: column;
+  align-items: centre;
+
+  * {
+    margin: 0;
+  }
+}
+
 }
 </style>
 </head>
