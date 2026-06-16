@@ -241,93 +241,224 @@ a.big-link {
   display: inline;
 }
 @media (min-width: 1001px) and (max-width: 2560px) {
-    body {
-    background-image: url('https://i.postimg.cc/8kDJGbb9/Home.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    margin: 2rem;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-    section {
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0;
-  }
-  .contact {
+    html {
+  font-family: "Helvetica", Helvetica Neue, sans-serif, Arial;
+  font-color: #242424;
+  --golden: rgba(254, 181, 0, 255);
+  --blue: rgba(0, 121, 155, 255);
+}
+
+body {
+  margin: 3rem 20%;
+  background-image: url('https://i.postimg.cc/8kDJGbb9/Home.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-bottom: 65px;
+}
+
+h1 {
+  text-transform: lowercase; 
   text-align: center;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 0rem;
-  margin-left: 0rem;
-  font-family: myFont;
-  font-size: 25px;
-}
-  .more-things {
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 1rem;
-  padding: 0;
-
-  img {
-    aspect-ratio: 1 / 1;
-    align-self: center;
-  }
-}
-.thing-showcase { 
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
+  font-family: myfont;
 }
 
-.thing-showcase > div {
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-
-  * {
-    margin: 0;
-  }
-}
-
-  .thing-showcasetwo { 
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.thing-showcasetwo > div {
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin-left: -2rem;
-  margin-right: -2rem;
-
-}
-  h7 {
+h2 {
   text-transform: uppercase;
   color: var(--golden);
-  line-height: normal; 
-  font-size: 18px;
+  line-height: 0.1; 
+  font-size: 30px;
   font-family: comicsansish;
-  margin-bottom: 1rem;
-  margin-top: -1rem;
+}
+
+h3 {
+  color: var(--golden);
+  font-size: 30px;
+  font-family: myfont;
+  margin-bottom: 3px;
+}
+  
+h4 {
+  text-transform: lowercase; 
+  text-align: center;
+  font-family: myfont;
+  margin-bottom: -1rem;
 }
   h5 {
   text-transform: uppercase;
   color: var(--golden);
   line-height: normal; 
   font-size: 18px;
-  margin-bottom: 1rem;
-  margin-top: -1rem;
   font-family: comicsansish;
+}
+    h7 {
+  text-transform: uppercase;
+  color: var(--golden);
+  line-height: normal; 
+  font-size: 18px;
+  font-family: comicsansish;
+}
+  h6 {
+  color: var(--golden);
+  font-size: 30px;
+  font-family: myfont;
+}
+img {
+  display: block;
+  inline-size: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section > * {
+  margin: 1rem;
+  flex-basis: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact {
+  text-align: right;
+  margin: 2rem 0;
+  margin-right: -8rem;
+  font-family: myFont;
+  font-size: 23px;
+}
+
+.new-work {
+  text-align: center;
+    img {
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+}
+
+.more-things {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  padding: 0 2rem;
+
+  img {
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+}
+.length {
+            line-height: 1px;
+        }
+.thing-showcase { 
+  margin: 2rem;
+}
+
+.thing-showcase > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  * {
+    margin: 0.5em 0;
+  }
+}
+
+  .thing-showcasetwo { 
+  margin: 2rem;
+}
+
+.thing-showcasetwo > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  * {
+    margin: 0.5em 0;
+  }
+}
+
+.footer > * {
+  outline: 2px solid var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+  display: inline;
+  box-shadow: 12px 12px 2px 1px hsl(215 44% 47%  / 23%);
+  background-color: white;
+}
+a.contact {
+  font-family: myFont;
+  color: #242424;
+  text-decoration: none;
+  hover: none;
+}
+a.textlink {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #45A6CC;
+  text-decoration: none;
+}
+  .textlink:hover {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--golden);
+}
+
+.newsletter {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #45A6CC;
+  text-decoration: none;
+  display: inline;
+}
+.newsletter:hover {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--golden);
+  cursor: pointer;
+}
+a.big-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: var(--blue); 
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  min-width: 40%;
+  max-width: 50%;
+  border-radius: 5px;
+  transition:
+    color 0.3s ease-in,
+    background-color 0.3s ease-in;
+    text-align: center;
+  align-self: center;
+  }
+  
+  .big-link:hover {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--blue);
+    background: white;
+    outline: 1px solid var(--blue);
+  }
+  
+  .rounded {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  #text {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: inline;
 }
 }
 @media (min-width: 481px) and (max-width: 1000px) {
