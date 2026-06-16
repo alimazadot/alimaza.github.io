@@ -274,7 +274,24 @@ a.big-link {
 
 }
 </style>
-<script> (function (s, e, n, d, er) { s['Sender'] = er; s[er] = s[er] || function () { (s[er].q = s[er].q || []).push(arguments) }, s[er].l = 1 * new Date(); var a = e.createElement(n), m = e.getElementsByTagName(n)[0]; a.async = 1; a.src = d; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender'); sender("a700dec6200828") </script>
+<script>
+  (function (s, e, n, d, er) {
+    s['Sender'] = er;
+    s[er] = s[er] || function () {
+      (s[er].q = s[er].q || []).push(arguments)
+    }, s[er].l = 1 * new Date();
+    s[er].on = function(event, callback) {
+      s[er].listeners = s[er].listeners || {};
+      (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+    };
+    var a = e.createElement(n),
+        m = e.getElementsByTagName(n)[0];
+    a.async = 1;
+    a.src = d;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('a700dec6200828')
+</script>
 </head>
   <body>
     <div class="contact">
@@ -355,7 +372,7 @@ a.big-link {
           wanna keep up with me?
         </i></h3>
         <p>
-          If you want to know any of my publishing announcements or new project releases, <span class="newsletter">sign up to receive an email from me</span> whenever something big happens. Don’t worry, I’ll only show up in your inbox when it’s exciting news!
+          If you want to know any of my publishing announcements or new project releases, sign up to receive an email from me whenever something big happens. Don’t worry, I’ll only show up in your inbox when it’s exciting news!
 <br></br>You can also find me talking about writing and art on <a class="textlink" href="https://www.youtube.com/@AliOnAuthortube">YouTube</a>, and on rare, special occasions, I’ll post to <a class="textlink" href="https://www.instagram.com/alidoesitall">Instagram</a>, <a class="textlink" href="https://www.alimaza.substack.com/">Substack</a>, and/or <a class="textlink" href="https://www.bsky.app/profile/alimaza.bsky.social">Bluesky</a>.
           </p>
       </div>
@@ -377,6 +394,7 @@ to send me am email:
      </p>
       </div>
     </section>
+    <div style="text-align: left" class="sender-form-field" data-sender-form-id="e73rYw"></div>
     <p><br</br></p>
 </body>
 </html>
